@@ -1,0 +1,17 @@
+[project]
+name = "qa-logging-lib"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "qa-ecosystem-settings",
+    "qa-py-wintreist",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+qa-ecosystem-settings = { git = "ssh://git@github.com/Wintreist/uv_bug_mre_2.git", subdirectory = "ecosystem_settings", rev = "TOLIBS-11111" }
+qa-py-wintreist = { git = "ssh://git@github.com/Wintreist/uv_bug_mre_2.git", subdirectory = "py_wintreist", rev = "TOLIBS-11111" }
