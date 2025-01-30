@@ -1,0 +1,15 @@
+[project]
+name = "qa-py-wintreist"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "qa-ecosystem-settings",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+qa-ecosystem-settings = { git = "ssh://git@github.com/Wintreist/uv_bug_mre_2.git", subdirectory = "ecosystem_settings", rev = "TOLIBS-11111" }
